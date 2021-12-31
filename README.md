@@ -4,23 +4,21 @@ To Install This Plugin Run
 
 composer require aayushmhu/yii2-htmltocsv dev-master
 
-To Use This Extension You Just Need to Export into your view and pass table id and Export into Excel
+To Use This Extension You Just Need to Write This
 
 For Example:
 
-<?php 
 use \aayushmhu\htmltocsv\ExportButton;
 
- ExportButton::widget([
-    'tableid'=>'table_id',
-    'filename'=>'Hello',
-    'options' => [
-        'id'=>\aayushmhu\htmltocsv\ExportButton::DEFAULT_BUTTON,
-        'class'=>'btn btn-primary',
-    ],
+ExportButton::widget([
+'tableid'=>'table_id',
+'filename'=>'Hello',
+'options' => [
+'id'=>\aayushmhu\htmltocsv\ExportButton::DEFAULT_BUTTON,
+'class'=>'btn btn-primary',
+],
 ]);
 
-?>
 <table class="table" id="table_id" >
   <thead>
     <tr>
