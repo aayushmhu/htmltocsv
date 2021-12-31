@@ -14,7 +14,7 @@ For Example:
 <?php>
 use \aayushmhu\htmltocsv\ExportButton;
 
-ExportButton::widget([
+echo ExportButton::widget([
   'tableid'=>'table_id',
   'filename'=>'Hello',
   'options' => [
