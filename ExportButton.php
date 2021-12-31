@@ -24,21 +24,27 @@ class ExportButton extends \yii\bootstrap4\Button {
      * @return void
      */
     public function run() {
+        $this->cssFile = dirname(__DIR__).'/yii2-htmltocsv/assets/default.css';
         $this->mainJSFile = dirname(__DIR__).'/yii2-htmltocsv/assets/main.js';
         $view = $this->getView();
+        $this->buttonid = $this->options['id'];
+
+        $view->registerJs(file_get_contents($this->mainJSFile));
 
         if($this->type == self::EXPORT_EXCEL){
-            $view->registerJs(file_get_contents($this->mainJSFile));
+            $exportjs = "
+                $('#{$this->buttonid}').click(function (event) {
+                        generateExcel($('#{$this->tableid}'),'{$this->filename}');
+                    });
+                ";
         }else if($this->type == self::EXPORT_CSV){
-            $view->registerJs(file_get_contents($this->mainJSFile));
+            $exportjs = "
+            $('#{$this->buttonid}').on('click', function (event) {
+                generateCSV.apply(this, [$('#{$this->tableid}'), '{$this->filename}']);
+            });";
         }
 
-        $exportjs = "
-        $('#{$this->buttonid}').click(function (event) {
-                generateExcel($('#{$this->tableid}'),'{$this->filename}');
-            });
-        ";
-
+        $view->registerCss(file_get_contents($this->cssFile));
         $view->registerJs($exportjs);        
         
         return parent::run();
