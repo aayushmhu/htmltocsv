@@ -7,6 +7,8 @@ composer require aayushmhu/yii2-htmltocsv dev-master
 To Use This Extension You Just Need to Write This
 
 For Example:
+
+<pre>
 <code>
 
 <?php>
@@ -23,6 +25,7 @@ ExportButton::widget([
 
 ?>
 </code>
+</pre>
 
 <table class="table" id="table_id" >
   <thead>
