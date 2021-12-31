@@ -7,17 +7,22 @@ composer require aayushmhu/yii2-htmltocsv dev-master
 To Use This Extension You Just Need to Write This
 
 For Example:
+<code>
 
+<?php>
 use \aayushmhu\htmltocsv\ExportButton;
 
 ExportButton::widget([
-'tableid'=>'table_id',
-'filename'=>'Hello',
-'options' => [
-'id'=>\aayushmhu\htmltocsv\ExportButton::DEFAULT_BUTTON,
-'class'=>'btn btn-primary',
-],
+  'tableid'=>'table_id',
+  'filename'=>'Hello',
+  'options' => [
+    'id'=>\aayushmhu\htmltocsv\ExportButton::DEFAULT_BUTTON,
+    'class'=>'btn btn-primary',
+  ],
 ]);
+
+?>
+</code>
 
 <table class="table" id="table_id" >
   <thead>
