@@ -1,8 +1,8 @@
 # htmltocsv
 
-To Install This Plugin Run
+To Install This Plugin Run THis Command into your terminal
 
-composer require aayushmhu/yii2-htmltocsv dev-master
+"composer require aayushmhu/yii2-htmltocsv dev-master"
 
 To Use This Extension You Just Need to Write This
 
@@ -10,8 +10,6 @@ For Example:
 
 <pre>
 <code>
-
-
 use \aayushmhu\htmltocsv\ExportButton;
 
 echo ExportButton::widget([
@@ -22,8 +20,6 @@ echo ExportButton::widget([
     'class'=>'btn btn-primary',
   ],
 ]);
-
-
 </code>
 </pre>
 
