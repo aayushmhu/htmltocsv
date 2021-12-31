@@ -1,0 +1,30 @@
+{
+    "name": "aayushmhu/yii2-htmltocsv",
+
+    "type": "yii2-extension",
+
+    "description": "Export Any HTML Table into CSV EXCEL ",
+    "keywords": ["yii2", "helper","Export to CSV"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Aayush Saini",
+            "email": "aayushsaini9999@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "aayushmhu\\htmltocsv\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.7-dev"
+        }
+    }
+}
