@@ -35,7 +35,6 @@ class ExportButton extends \yii\bootstrap4\Button {
 
         $exportjs = "
         $('#{$this->buttonid}').click(function (event) {
-            alert('ds');
                 generateExcel($('#{$this->tableid}'),'{$this->filename}');
             });
         ";
