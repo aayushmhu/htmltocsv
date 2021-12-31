@@ -11,7 +11,7 @@ For Example:
 <pre>
 <code>
 
-<?php
+
 use \aayushmhu\htmltocsv\ExportButton;
 
 echo ExportButton::widget([
@@ -23,7 +23,7 @@ echo ExportButton::widget([
   ],
 ]);
 
-?>
+
 </code>
 </pre>
 
