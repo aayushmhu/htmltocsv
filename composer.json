@@ -3,7 +3,7 @@
 
     "type": "yii2-extension",
 
-    "description": "Export Any HTML Table into CSV EXCEL ",
+    "description": "Export Any HTML Table into CSV or EXCEL ",
     "keywords": ["yii2", "helper","Export to CSV"],
     "license": "BSD-3-Clause",
     "authors": [
