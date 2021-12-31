@@ -11,7 +11,7 @@ For Example:
 <pre>
 <code>
 
-<?php>
+<?php
 use \aayushmhu\htmltocsv\ExportButton;
 
 echo ExportButton::widget([
