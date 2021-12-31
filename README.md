@@ -1,4 +1,4 @@
-# popupbutton
+# htmltocsv
 
 To Install This Plugin Run
 
@@ -11,7 +11,7 @@ For Example:
 <?php 
 use \aayushmhu\htmltocsv\ExportButton;
 
-echo ExportButton::widget([
+ ExportButton::widget([
     'tableid'=>'table_id',
     'filename'=>'Hello',
     'options' => [
